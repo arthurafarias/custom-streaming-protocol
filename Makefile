@@ -2,14 +2,14 @@
 
 PACKAGES = sources-vhdl-2000-packages/*
 FILES = sources-vhdl-2000/*
-TESTBENCH = pixel_bus_split_1x2
+TESTBENCH = custom_stream_split_1x2
 TESTBENCHPATH = sources-vhdl-2000-testbenches/${TESTBENCHFILE}*
 TESTBENCHFILE = ${TESTBENCH}_tb
 WORKDIR = work
 
 #GHDL CONFIG
 GHDL_CMD = ghdl
-GHDL_FLAGS  = --ieee=synopsys --warn-no-vital-generic --workdir=$(WORKDIR)
+GHDL_FLAGS  = --std=08 --ieee=synopsys -frelaxed-rules --warn-no-vital-generic --workdir=$(WORKDIR)
 
 STOP_TIME = 500ns
 # Simulation break condition
