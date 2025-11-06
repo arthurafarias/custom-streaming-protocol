@@ -8,6 +8,8 @@ This protocol is a simplified version of a memory transfer protocol that allows 
 
 ### Transfer Operation
 
+![Timing Diagram 01](https://svg.wavedrom.com/github/arthurafarias/custom-streaming-protocol/master/docs/img/timing-00.json5)
+
 ```wavedrom
 {signal: [
   {name: 'clk',  wave: 'p..|...|...'},

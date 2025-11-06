@@ -1,0 +1,6 @@
+{signal: [
+  {name: 'clk',  wave: 'p..|...|...'},
+  {name: 'sync', wave: '0..|1.0|1.0'},
+  {name: 'addr', wave: 'x.x|=.x|22x', data: ['addr', '0x00', '0x04']},
+  {name: 'data', wave: 'x.x|=.x|22x', data: ['data', 'W0', 'W1']},
+]}
