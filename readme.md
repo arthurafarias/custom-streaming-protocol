@@ -21,6 +21,7 @@ This protocol is a simplified version of a memory transfer protocol that allows 
 
 Example for 1 byte bus
 
+![Timing Diagram 01](https://svg.wavedrom.com/github/arthurafarias/custom-streaming-protocol/master/docs/img/timing-01.json5)
 ```wavedrom
 {signal: [
   {name: 'clk',  wave: 'p..|...|...'},
@@ -32,6 +33,7 @@ Example for 1 byte bus
 
 Example for 2 byte bus
 
+![Timing Diagram 01](https://svg.wavedrom.com/github/arthurafarias/custom-streaming-protocol/master/docs/img/timing-02.json5)
 ```wavedrom
 {signal: [
   {name: 'clk',  wave: 'p..|...|...'},
@@ -43,6 +45,7 @@ Example for 2 byte bus
 
 Example for 4 bytes bus
 
+![Timing Diagram 01](https://svg.wavedrom.com/github/arthurafarias/custom-streaming-protocol/master/docs/img/timing-03.json5)
 ```wavedrom
 {signal: [
   {name: 'clk',  wave: 'p..|...|...'},
