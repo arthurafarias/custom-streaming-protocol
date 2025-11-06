@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 24 22:12:39 2025
+# Process ID         : 5236
+# Current directory  : /home/arthur/Work/Software/lambdatech-vhdl-pixelbus
+# Command line       : vivado
+# Log file           : /home/arthur/Work/Software/lambdatech-vhdl-pixelbus/vivado.log
+# Journal file       : /home/arthur/Work/Software/lambdatech-vhdl-pixelbus/vivado.jou
+# Running On         : arthur-notebook-victus
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 800.311 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 33330 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 37624 MB
+# Available Virtual  : 34481 MB
+#-----------------------------------------------------------
+start_gui
+open_project /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {/Work/Projects/xczu3eg-sfvc784-1-base.ip /Work/Projects/lambda.tech-ip-repository /Work/lambda.tech-ip-repository /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.vitis/hls_component/hls_component/hls/impl/ip} [current_project]
+update_ip_catalog
+ipx::edit_ip_in_project -upgrade true -name axi4_slave_base_v1_0_project -directory /home/arthur/Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.tmp/axi4_slave_base_v1_0_project /Work/Projects/lambda.tech-ip-repository/axi4_slave_base_1_0/component.xml
+update_compile_order -fileset sources_1
+close_project
+close [ open /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_memory_writer_v2.vhd w ]
+add_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_memory_writer_v2.vhd
+update_compile_order -fileset sources_1
+open_bd_design {/Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {1 101 206} [get_bd_cells xlconcat_0]
+set_property location {2 458 893} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {2 463 846} [get_bd_cells zynq_ultra_ps_e_0]
+regenerate_bd_layout
+export_ip_user_files -of_objects  [get_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_memory_writer_v2.vhd] -no_script -reset -force -quiet
+remove_files  /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_memory_writer_v2.vhd
+file delete -force /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_memory_writer_v2.vhd
+ipx::edit_ip_in_project -upgrade true -name ax4lite_base_v1_0_project -directory /home/arthur/Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.tmp/ax4lite_base_v1_0_project /Work/Projects/lambda.tech-ip-repository/ax4lite_base_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::unload_core /Work/Projects/lambda.tech-ip-repository/ax4lite_base_1_0/component.xml
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/custom-stream-vhdl/sources-vhdl-2000/custom_stream_multiply.vhdl] -no_script -reset -force -quiet
+remove_files  /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/custom-stream-vhdl/sources-vhdl-2000/custom_stream_multiply.vhdl
+file delete -force /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/custom-stream-vhdl/sources-vhdl-2000/custom_stream_multiply.vhdl
+close [ open /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_slave_axi4s_master.vhd w ]
+add_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_slave_axi4s_master.vhd
+close [ open /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_add.vhd w ]
+add_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_add.vhd
+close [ open /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_master_axi4s_slave.vhd w ]
+add_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_master_axi4s_slave.vhd
+close [ open /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_multiply.vhd w ]
+add_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_multiply.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_axi4_memory_write_bridge.vhd] -no_script -reset -force -quiet
+remove_files  /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_axi4_memory_write_bridge.vhd
+file delete -force /Work/Projects/xczu3eg-sfvc784-1-base/xczu3eg-sfvc784-1-base.srcs/sources_1/new/custom_stream_axi4_memory_write_bridge.vhd
+ipx::open_ipxact_file /Work/Projects/lambda.tech-ip-repository/custom_stream.xml
+set_property master_presence optional [ipx::get_bus_abstraction_ports cs_fs -of_objects [ipx::current_busabs]]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property bus_type_vlnv lambda.tech:user:custom_stream:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild -repo_path /Work/Projects/lambda.tech-ip-repository
+ipx::add_bus_abstraction_port cs_ready [ipx::current_busabs]
+set_property master_presence required [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property master_direction in [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property master_width 1 [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property slave_presence required [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property slave_width 1 [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+ipx::add_bus_abstraction_port cs_valid [ipx::current_busabs]
+set_property master_presence required [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property master_direction in [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property master_width 1 [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property slave_presence required [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property slave_width 1 [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property master_direction out [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+set_property slave_direction in [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property bus_type_vlnv lambda.tech:user:custom_stream:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild -repo_path /Work/Projects/lambda.tech-ip-repository
+set_property master_presence optional [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property master_presence optional [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property bus_type_vlnv lambda.tech:user:custom_stream:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild -repo_path /Work/Projects/lambda.tech-ip-repository
+set_property description {Ready/Valid Signaling} [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property description {Ready/Valid Signaling} [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property bus_type_vlnv lambda.tech:user:custom_stream:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild -repo_path /Work/Projects/lambda.tech-ip-repository
+set_property default_value 0 [ipx::get_bus_abstraction_ports cs_ready -of_objects [ipx::current_busabs]]
+set_property default_value 0 [ipx::get_bus_abstraction_ports cs_valid -of_objects [ipx::current_busabs]]
+ipx::save_bus_definition [ipx::current_busdef]
+set_property bus_type_vlnv lambda.tech:user:custom_stream:1.0 [ipx::current_busabs]
+ipx::save_abstraction_definition [ipx::current_busabs]
+update_ip_catalog -rebuild -repo_path /Work/Projects/lambda.tech-ip-repository
+ipx::unload_abstraction_definition /Work/Projects/lambda.tech-ip-repository/custom_stream_rtl.xml
+ipx::unload_bus_definition /Work/Projects/lambda.tech-ip-repository/custom_stream.xml
